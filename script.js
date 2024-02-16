@@ -1,38 +1,37 @@
-new Promise((resolve, reject) => {
-  
-  
-  
-  
-  
-  
-  
-  
-  
-})const myfetchPromise = fetch(
-    "https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json",
-  );
-  
-  console.log(myfetchPromise);
-  
-  myfetchPromise.then((response) => {
-    console.log(`Received response: ${response.status}`);
-  });
-  
-  console.log("Started request…");
+// //fetch example
+// //calling fetch API and assigning the return value to the fetchPromise variable
 
-  const myfetchPromisefetchPromise = fetch(
-    "https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json",
-  );
-  
-  myfetchPromise.then((response) => {
-    const jsonPromise = response.json();
-    jsonPromise.then((data) => {
-      console.log(data[0].name);
-    });
-  });
+// const fetchPromise = fetch(
+//   "https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json",
 
-//   const myPromise = new Promise((resolve) => {
-//   resolve("I am a resolved promise");
+// )
+
+// console.log(fetchPromise);
+// fetchPromise.then((Response) => {
+//   console.log(`received response: ${Response.status}`);
 // });
 
-// myPromise.then(result => console.log(result));
+// console.log("started request...");
+
+
+// chaining promises
+// const fetchPromise = fetch(
+//   "https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json",
+// );
+
+// // fetchPromise.then((response) => {
+// //   const jsonPromise = response.json();
+// //   jsonPromise.then((data) => {
+// //     console.log(data[0].name);
+// //   })
+// });
+
+// const fetchPromise = fetch(
+//   "https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json",
+// );
+
+// fetchPromise
+// .then((response) => response.json())
+// .then((data) => {
+//   console.log(data[0].name);
+// });
